@@ -9,7 +9,7 @@ resources:
 - name: docker-remote-tunnel-image
   type: docker-image
   source:
-    repository: ruanbekker/docker-remote-tunnel
+    repository: karunc/docker-remote-tunnel
     tag: test
     username: ((docker_hub_user))
     password: ((docker_hub_password))
@@ -37,7 +37,7 @@ jobs:
       image_resource:
         type: docker-image
         source:
-          repository: rbekker87/build-tools
+          repository: karunc/build-tools
 
       outputs:
       - name: workspace
