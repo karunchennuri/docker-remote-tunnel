@@ -38,6 +38,7 @@ jobs:
         type: docker-image
         source:
           repository: karunc/build-tools
+          tag: v1.0
 
       outputs:
       - name: workspace
